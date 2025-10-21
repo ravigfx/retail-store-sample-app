@@ -401,7 +401,7 @@ spec:
         app.kubernetes.io/component: dynamodb
         app.kubernetes.io/owner: retail-store-sample
     spec:
-      containers:
+    containers:
         - name: dynamodb
           image: "public.ecr.aws/aws-dynamodb-local/aws-dynamodb-local:1.25.1"
           imagePullPolicy: IfNotPresent
@@ -429,7 +429,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: orders-rabbitmq
-  
+
 ---
 # Source: retail-store-sample-orders-chart/templates/secret-db.yaml
 apiVersion: v1
