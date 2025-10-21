@@ -429,7 +429,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: orders-rabbitmq
-data:
+  
 ---
 # Source: retail-store-sample-orders-chart/templates/secret-db.yaml
 apiVersion: v1
